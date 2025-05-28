@@ -25,6 +25,20 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // Гамбургер-меню
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector("header nav ul");
+
+    if (hamburger && navMenu) {
+        navMenu.classList.add("nav-menu");
+
+        hamburger.addEventListener("click", function() {
+            navMenu.classList.toggle("active");
+            hamburger.querySelector("span").textContent = navMenu.classList.contains("active") ? "✖" : "☰";
+        });
+    }
+
+
     const parallaxImage = document.querySelector(".parallax-image");
     const bannerText = document.querySelector(".banner-content");
     const banner = document.querySelector(".banner");

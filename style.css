@@ -832,3 +832,272 @@ header nav ul li a.active {
 .catalog-products .product-card2 {
     width: 100%; /* Картки займають усю ширину комірки сітки */
 }
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Забезпечимо горизонтальне розташування іконок у десктопі */
+.header-right .icons {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Відступ між іконками */
+}
+
+.nav-menu {
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Mobile (менше 768px) */
+@media (max-width: 767px) {
+    /* Header */
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo {
+        flex: 0;
+    }
+
+    header nav {
+        flex: 0;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-right .icons {
+        display: flex;
+        align-items: center;
+        gap: 8px; /* Горизонтальний відступ між іконками */
+    }
+
+    .header-right .icons span {
+        font-size: 16px;
+        margin-left: 0; /* Прибираємо margin-left, щоб не було зайвих відступів */
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    header nav ul.nav-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #252528;
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        z-index: 99;
+    }
+
+    header nav ul.nav-menu.active {
+        max-height: 300px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    header .logo a {
+        font-size: 18px;
+    }
+
+    /* Banner */
+    .banner {
+        height: 300px;
+        background-attachment: scroll; /* Відключаємо паралакс на мобільних */
+    }
+
+    .banner h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .banner p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .banner img.parallax-image {
+        width: 120px;
+    }
+
+    /* New Arrivals, Popular Products, Catalog */
+    .new-arrivals h2,
+    .popular-products h2,
+    .new-arrivals-page h1,
+    .popular-page h1,
+    .catalog-page h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-arrivals-page .product-grid,
+    .popular-page .product-grid,
+    .catalog-products .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .product-card,
+    .product-card1,
+    .product-card2 {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .image-wrapper {
+        height: 150px;
+    }
+
+    .product-card .image-wrapper img,
+    .product-card1 .image-wrapper img,
+    .product-card2 .image-wrapper img {
+        max-width: 140px;
+    }
+
+    /* Subscription */
+    .subscription h2 {
+        font-size: 24px;
+    }
+
+    .subscription p {
+        font-size: 14px;
+    }
+
+    .subscription-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscription-form input {
+        width: 100%;
+    }
+
+    /* About Us */
+    .about-us h2,
+    .about-page h1 {
+        font-size: 24px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-text p,
+    .about-text ul li {
+        font-size: 14px;
+    }
+
+    .about-image img {
+        max-width: 80%;
+    }
+
+    /* Profile Page */
+    .profile-page h1 {
+        font-size: 24px;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-details p,
+    .order-item p {
+        font-size: 14px;
+    }
+
+    /* Cart Page */
+    .cart-page h1 {
+        font-size: 24px;
+    }
+
+    .cart-content {
+        flex-direction: column;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cart-item-image img {
+        width: 60px;
+    }
+
+    .cart-item-details h3 {
+        font-size: 16px;
+    }
+
+    .cart-item-details .price,
+    .cart-item-details .total {
+        font-size: 14px;
+    }
+
+    /* Catalog Page */
+    .catalog-content {
+        flex-direction: column;
+    }
+
+    .filters-sidebar h2 {
+        font-size: 20px;
+    }
+
+    .filter-group h3 {
+        font-size: 16px;
+    }
+
+    .filter-group label {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        flex-direction: column;
+    }
+
+    .footer-grid h3 {
+        font-size: 16px;
+    }
+
+    .footer-grid ul li a,
+    .footer-grid p {
+        font-size: 12px;
+    }
+}
+
