@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик - ITech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ITech</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="new-arrivals.html">Новинки</a></li>
+                    <li><a href="popular.html">Популярне</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <span>🔍</span>
+                <a href="cart.html"><span>🛒</span></a>
+                <a href="profile.html"><span>🧑</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-page">
+        <div class="container">
+            <h1>Кошик</h1>
+            <div class="cart-content">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="Images/Iphone.png" alt="iPhone 16 Pro Max">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>Apple iPhone 16 Pro Max</h3>
+                            <p class="price">70000₴</p>
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <span class="quantity-value">1</span>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <p class="total">Разом: 70000₴</p>
+                            <button class="remove-btn">Видалити</button>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="Images/AirPods.png" alt="AirPods">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>Apple AirPods</h3>
+                            <p class="price">8000₴</p>
+                            <div class="quantity">
+                                <button class="quantity-btn minus">-</button>
+                                <span class="quantity-value">2</span>
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <p class="total">Разом: 16000₴</p>
+                            <button class="remove-btn">Видалити</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <h2>Підсумок</h2>
+                    <p><strong>Загальна кількість товарів:</strong> 3</p>
+                    <p><strong>Загальна сума:</strong> 86000₴</p>
+                    <a href="#" class="checkout-btn">Оформити замовлення</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="new-arrivals.html">Новинки</a></li>
+                        <li><a href="popular.html">Популярне</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Інформація для замовлення</h3>
+                    <ul>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Доставка</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Ми в соціальних мережах</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Контакти</h3>
+                    <p>Київ, вул. Хрещатик, 22</p>
+                    <p>Телефон: +380 (44) 000-00-00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

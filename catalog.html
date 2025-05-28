@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - ITech</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ITech</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="new-arrivals.html">Новинки</a></li>
+                    <li><a href="popular.html">Популярне</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="search.html"><span>🔍</span></a>
+                <a href="cart.html"><span>🛒</span></a>
+                <a href="profile.html"><span>🧑</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Catalog Section -->
+    <section class="catalog-page">
+        <div class="container">
+            <h1>Каталог</h1>
+            <div class="catalog-content">
+                <!-- Filters Sidebar -->
+                <div class="filters-sidebar">
+                    <h2>Фільтри</h2>
+                    <div class="filter-group">
+                        <h3>Категорії</h3>
+                        <label><input type="checkbox"> Смартфони</label>
+                        <label><input type="checkbox"> Ноутбуки</label>
+                        <label><input type="checkbox"> Навушники</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Ціна</h3>
+                        <label><input type="radio" name="price" value="0-20000"> 0 - 20000₴</label>
+                        <label><input type="radio" name="price" value="20000-50000"> 20000 - 50000₴</label>
+                        <label><input type="radio" name="price" value="50000+"> 50000₴ і вище</label>
+                    </div>
+                    <button id="applyFiltersBtn" class="apply-filters-btn">Застосувати</button>
+                </div>
+                <!-- Products Grid -->
+                <div class="catalog-products">
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <div class="image-wrapper">
+                                <img src="Images/Iphone.png" alt="iPhone 16 Pro Max">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>Apple iPhone 16 Pro Max</h3>
+                                <p>70000₴</p>
+                            </div>
+                        </div>
+                        <div class="product-card1">
+                            <div class="image-wrapper">
+                                <img src="Images/MacBook.png" alt="MacBook Air">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>MacBook Air</h3>
+                                <p>40000₴</p>
+                            </div>
+                        </div>
+                        <div class="product-card2">
+                            <div class="image-wrapper">
+                                <img src="Images/AirPods.png" alt="AirPods">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>Apple AirPods</h3>
+                                <p>8000₴</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="image-wrapper">
+                                <img src="Images/AirPods Max.png" alt="AirPods Max">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>Apple AirPods Max</h3>
+                                <p>19005₴</p>
+                            </div>
+                        </div>
+                        <div class="product-card1">
+                            <div class="image-wrapper">
+                                <img src="Images/MacBook.png" alt="MacBook Air M1">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>Apple MacBook Air M1</h3>
+                                <p>17905₴</p>
+                            </div>
+                        </div>
+                        <div class="product-card2">
+                            <div class="image-wrapper">
+                                <img src="Images/Iphone.png" alt="iPhone 16">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>Apple iPhone 16</h3>
+                                <p>45605₴</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="image-wrapper">
+                                <img src="Images/Iphone.png" alt="iPhone 16 Pro Max Black">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>Apple iPhone 16 Pro Max (Black)</h3>
+                                <p>72000₴</p>
+                            </div>
+                        </div>
+                        <div class="product-card1">
+                            <div class="image-wrapper">
+                                <img src="Images/MacBook.png" alt="MacBook Air M2">
+                            </div>
+                            <div class="text-wrapper">
+                                <h3>MacBook Air M2</h3>
+                                <p>45000₴</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="new-arrivals.html">Новинки</a></li>
+                        <li><a href="popular.html">Популярне</a></li>
+                        <li><a href="about.html">Про нас</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Інформація для замовлення</h3>
+                    <ul>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Доставка</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Ми в соціальних мережах</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Контакти</h3>
+                    <p>Київ, вул. Хрещатик, 22</p>
+                    <p>Телефон: +380 (44) 000-00-00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
