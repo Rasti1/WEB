@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://web-orpin-pi-63.vercel.app/sitemap.xml
