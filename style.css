@@ -850,11 +850,10 @@ header nav ul li a.active {
     gap: 15px;
 }
 
-/* Забезпечимо горизонтальне розташування іконок у десктопі */
 .header-right .icons {
     display: flex;
     align-items: center;
-    gap: 8px; /* Відступ між іконками */
+    gap: 8px;
 }
 
 .nav-menu {
@@ -862,7 +861,7 @@ header nav ul li a.active {
     overflow: hidden;
 }
 
-/* Mobile (менше 768px) */
+/* Mobile */
 @media (max-width: 767px) {
     /* Header */
     header .container {
@@ -888,12 +887,12 @@ header nav ul li a.active {
     .header-right .icons {
         display: flex;
         align-items: center;
-        gap: 8px; /* Горизонтальний відступ між іконками */
+        gap: 8px; 
     }
 
     .header-right .icons span {
         font-size: 16px;
-        margin-left: 0; /* Прибираємо margin-left, щоб не було зайвих відступів */
+        margin-left: 0;
     }
 
     .hamburger {
@@ -929,10 +928,9 @@ header nav ul li a.active {
         font-size: 18px;
     }
 
-    /* Banner */
     .banner {
         height: 300px;
-        background-attachment: scroll; /* Відключаємо паралакс на мобільних */
+        background-attachment: scroll;
     }
 
     .banner h1 {
